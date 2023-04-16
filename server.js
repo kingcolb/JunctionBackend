@@ -2,8 +2,6 @@ const http = require('http')
 const { MongoClient } = require('mongodb')
 require('dotenv').config();
 
-process.env.USER_ID; // "239482"
-process.env.USER_KEY;
 async function writeApplication(client, body) {
     try {
       await client.connect()
